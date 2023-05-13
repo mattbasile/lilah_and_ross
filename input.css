@@ -19,20 +19,36 @@
 @tailwind components;
 @tailwind utilities;
 
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    padding: 40px 24px;
-    margin: 0 auto;
+
+
+
+.gallery-image {
+  transition: opacity 1s ease-in-out;
 }
 
-.img-wrapper {
-    opacity: 0;
-    transition: opacity 2s;
+.prev-btn,
+.next-btn {
+  font-family: 'Cyriele';
+  text-transform: uppercase;
+  z-index: 1000;
+  
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
 
-.img-loaded {
-    opacity: 1;
+.prev-btn:hover,
+.next-btn:hover {
+  background: rgba(255, 255, 255, 1);
 }
 
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
