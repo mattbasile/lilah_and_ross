@@ -6,8 +6,8 @@ let activeImage = imageElement1;
 let inactiveImage = imageElement2;
 
 function applyRandomRotation(imageElement) {
-  const minRotation = -7;
-  const maxRotation = 7;
+  const minRotation = -5;
+  const maxRotation = 5;
   const rotation = Math.random() * (maxRotation - minRotation) + minRotation;
   imageElement.style.transform = `rotate(${rotation}deg)`;
 }
