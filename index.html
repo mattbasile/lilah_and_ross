@@ -52,21 +52,21 @@
         >
       </nav>
     </header>
-    <section id="#schedule" class="bg-brick w-full px-8 py-24 relative">
+    <section id="#schedule" class="bg-brick w-full px-4 py-24 relative -z-30">
       <img
-        class="absolute z-0 top-0 left-0 h-full w-full"
+        class="absolute z-0 top-0 left-0 h-full w-full -z-20"
         src="./images/Texture-Noise.png"
         alt=""
       />
-      <img class="absolute hidden lg:block z-10 top-0 left-0  h-80 px-2  w-80 px-2  rotate-180 transform -scale-x-100	" src="./images/flower-1.png" alt="">
-      <img class="absolute hidden lg:block z-10 top-0 right-0 h-80 px-2  w-80 px-2  rotate-180" src="./images/flower-1.png" alt="">
+      <img class="absolute hidden lg:block -z-10 top-0 left-0  h-80 px-2  w-auto px-2  rotate-180 transform -scale-x-100	" src="./images/flower-1.png" alt="">
+      <img class="absolute hidden lg:block -z-10 top-0 right-0 h-80 px-2  w-auto px-2  rotate-180" src="./images/flower-1.png" alt="">
       <h2
-        class="text-center z-40 py-10 font-header uppercase font-bold text-6xl text-white tracking-widest"
+        class="text-center z-40 relative py-10 font-header uppercase font-bold text-6xl text-white tracking-widest"
       >
         Please join us in Maine.
       </h2>
       <div
-        class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-12"
+        class="z-40 relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-12"
       >
         <div class="border border-aqua rounded-full flex flex-col items-center justify-center w-full h-[450px]">
           <p
@@ -148,7 +148,7 @@
     </section>
     <section
       id="#travel"
-      class="w-full px-8 py-16 relative bg-travel-pattern bg-no-repeat bg-cover bg-center"
+      class="w-full px-4 py-16 relative bg-travel-pattern bg-no-repeat bg-cover bg-center"
     >
       <div class="w-full flex items-center justify-center">
         <h2
@@ -217,7 +217,7 @@
         </a>
       </div>
     </section>
-    <section id="#faq" class="w-full px-8 py-16 relative bg-yellow">
+    <section id="#faq" class="w-full px-4 py-16 relative bg-yellow">
       <div class="w-full flex items-stretch justify-center lg:-space-x-12">
         <img class="hidden lg:flex self-start opacity-40 h-32  w-32 px-2	" src="./images/flower-2.png" alt="">
         <h2
@@ -308,25 +308,25 @@
         </li>
       </ul>
     </section>
-    <section id="gallery" class="w-full bg-aqua/90 py-16">
+    <section id="gallery" class="w-full bg-aqua/90 py-16 px-4 flex flex-col justify-center items-center">
       <h2
         class="border-b-4 border-white pb-2 w-full text-center inline-block my-16 font-header uppercase font-bold text-6xl text-white tracking-widest"
       >
         A FEW SPECIAL PICS FROM OVER THE YEARS
       </h2>
       <div
-        class="gallery relative grid grid-cols-6 gap-12 items-center mx-auto w-full h-auto md:h-[600px] my-8"
+        class="gallery relative grid grid-cols-6 gap-12 items-center mx-auto w-full h-auto md:h-[800px] my-8"
       >
         <button class="prev-btn col-span-6 md:col-span-1" onclick="changeImage(-1)">Previous</button>
         <div class="px-24 relative h-[500px] md:h-full w-full col-span-6 md:col-span-4">
           <img
-            class="gallery-image w-full h-full object-cover opacity-0 rounded-2xl absolute top-0 drop-shadow-xl "
+            class="gallery-image w-full h-full object-cover opacity-0 rounded-2xl absolute top-0 inset-x-0 drop-shadow-xl "
             id="image1"
             src=""
             alt="Gallery Image"
           />
           <img
-            class="gallery-image w-full h-full object-cover opacity-0 rounded-2xl absolute top-0 drop-shadow-xl"
+            class="gallery-image w-full h-full object-cover opacity-0 rounded-2xl absolute top-0 inset-x-0 drop-shadow-xl"
             id="image2"
             src=""
             alt="Gallery Image"
