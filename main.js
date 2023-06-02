@@ -25,7 +25,7 @@ function changeImage(direction) {
   newImage.onload = function () {
     inactiveImage.src = this.src;
     activeImage.style.opacity = 0;
-    applyRandomRotation(inactiveImage);
+    // applyRandomRotation(inactiveImage);
     inactiveImage.style.opacity = 1;
     let temp = activeImage;
     activeImage = inactiveImage;

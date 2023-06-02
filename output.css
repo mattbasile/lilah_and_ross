@@ -929,10 +929,6 @@ video {
   width: 450px;
 }
 
-.w-\[500px\] {
-  width: 500px;
-}
-
 .w-auto {
   width: auto;
 }
@@ -943,10 +939,6 @@ video {
 
 .max-w-4xl {
   max-width: 56rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
 }
 
 .flex-shrink {
@@ -1979,7 +1971,7 @@ video {
 }
 
 .bg-olive {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./images/Olive.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/Olive.jpeg');
 }
 
 .bg-travel-pattern {
@@ -2220,23 +2212,18 @@ video {
   font-family: Cyriele, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -2815,6 +2802,10 @@ video {
     height: 100%;
   }
 
+  .md\:h-\[750px\] {
+    height: 750px;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -2831,6 +2822,11 @@ video {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2846,8 +2842,8 @@ video {
     display: flex;
   }
 
-  .lg\:w-full {
-    width: 100%;
+  .lg\:h-screen {
+    height: 100vh;
   }
 
   .lg\:grid-cols-4 {
@@ -2868,6 +2864,11 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(4rem * var(--tw-space-x-reverse));
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 

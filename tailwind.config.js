@@ -16,7 +16,7 @@ module.exports = {
         'travel-pattern':
           "linear-gradient(rgba(122, 148, 120, 0.4), rgba(122, 148, 120, 0.4)), url('./images/prouts-neck.jpeg')",
         olive:
-          "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./images/Olive.jpeg')",
+          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/Olive.jpeg')",
       },
     },
     fontFamily: {
