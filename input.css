@@ -53,3 +53,7 @@
 .next-btn {
   right: 10px;
 }
+
+.z-max{
+  z-index: 100000000;
+}

@@ -35,3 +35,14 @@ function changeImage(direction) {
 
 // Initial load
 changeImage(0);
+
+const MobileMenu = document.getElementById('mobile-menu');
+
+const hideMobileMenu = () => {
+  MobileMenu.classList.remove('flex');
+  MobileMenu.classList.add('hidden');
+};
+const showMobileMenu = () => {
+  MobileMenu.classList.remove('hidden');
+  MobileMenu.classList.add('flex');
+};
