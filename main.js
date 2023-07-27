@@ -46,3 +46,9 @@ const showMobileMenu = () => {
   MobileMenu.classList.remove('hidden');
   MobileMenu.classList.add('flex');
 };
+
+const scrolltoId = (id) => {
+  var access = document.getElementById(id);
+  access.scrollIntoView({ behavior: 'smooth' }, true);
+  hideMobileMenu();
+};
