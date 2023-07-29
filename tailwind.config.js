@@ -12,7 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern':
-          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/Flowers-Header.png')",
+          "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./images/Flowers-Header.png')",
         'travel-pattern':
           "linear-gradient(rgba(122, 148, 120, 0.4), rgba(122, 148, 120, 0.4)), url('./images/prouts-neck.jpeg')",
         olive:

@@ -16,10 +16,13 @@
   </head>
   <body class="relative">
     <div class="absolute w-full flex justify-end md:hidden p-16 z-max">
-        <button onclick="showMobileMenu()" class="rounded-md text-white font-header font-semibold px-8 py-3 border border-white hover:bg-white hover:text-black">
-           Menu
-        </button>
-      </div>
+      <button
+        onclick="showMobileMenu()"
+        class="rounded-md text-white font-header font-semibold px-8 py-3 border border-white hover:bg-white hover:text-black"
+      >
+        Menu
+      </button>
+    </div>
     <header
       class="relative w-full h-[750px] flex flex-col items-center justify-center bg-hero-pattern bg-cover"
     >
@@ -68,7 +71,7 @@
     </header>
     <!-- Mobile Nav -->
     <nav
-    id="mobile-menu"
+      id="mobile-menu"
       class="z-max fixed h-screen hidden flex-col items-center justify-center bg-brick md:hidden top-0 inset-x-0 w-full mx-auto px-16"
     >
       <div class="w-full flex justify-end text-white mb-10">
@@ -89,18 +92,21 @@
       <button
         onclick="scrolltoId('schedule')"
         class="my-12 hover:underline block text-white font-body text-center uppercase text-4xl tracking-widest"
-        >Schedule</button
       >
+        Schedule
+      </button>
       <button
         onclick="scrolltoId('travel')"
         class="my-12 hover:underline block text-white font-body text-center uppercase text-4xl tracking-widest"
-        >Travel</button
       >
+        Travel
+      </button>
       <button
         onclick="scrolltoId('faq')"
         class="my-12 hover:underline block text-white font-body text-center uppercase text-4xl tracking-widest"
-        >FAQ</button
       >
+        FAQ
+      </button>
       <a
         target="_blank"
         href="https://www.blueprintregistry.com/registry/lilahandross"
@@ -110,113 +116,108 @@
     </nav>
 
     <section id="schedule" class="bg-brick w-full px-4 py-24 relative -z-30">
-      <img
-        class="absolute z-0 top-0 left-0 h-full w-full -z-20"
-        src="./images/Texture-Noise.png"
-        alt=""
-      />
-      <img
-        class="absolute hidden lg:block -z-10 top-0 left-0 h-80 px-2 w-auto px-2 rotate-180 transform -scale-x-100"
-        src="./images/flower-1.png"
-        alt=""
-      />
-      <img
-        class="absolute hidden lg:block -z-10 top-0 right-0 h-80 px-2 w-auto px-2 rotate-180"
-        src="./images/flower-1.png"
-        alt=""
-      />
+      <video
+        autoplay
+        muted
+        loop
+        id="myVideo"
+        class="object-cover absolute z-0 top-0 left-0 h-full w-full -z-20"
+      >
+        <source src="./images/schedule-video.mov" type="video/mp4" />
+      </video>
+      
       <h2
         class="text-center z-40 relative py-10 font-header uppercase font-bold text-3xl md:text-4xl lg:text-6xl text-white tracking-widest"
       >
         PLEASE JOIN US IN MAINE
       </h2>
       <div
-        class="z-40 relative mx-auto flex items-center justify-center flex-wrap gap-8  w-full mt-12"
+        class="z-40 relative mx-auto flex items-center justify-center flex-wrap gap-8 w-full mt-12"
       >
         <div
-          class="border border-aqua rounded-full flex flex-col items-center justify-center w-[450px] h-[450px]"
+          class="bg-white/50 border border-aqua rounded-full flex flex-col items-center justify-center w-[450px] h-[450px]"
         >
           <p
-            class="text-white font-body text-center uppercase text-5xl xl:text-6xl tracking-widest"
+            class="font-body text-center uppercase text-5xl xl:text-6xl tracking-widest"
           >
             10.6
           </p>
           <p
-            class="mt-8 text-white font-body text-center uppercase text-3xl tracking-widest"
+            class="mt-8 font-body text-center uppercase text-3xl tracking-widest"
           >
             welcOme drinks
           </p>
           <p
-            class="mt-4 text-white font-body text-center uppercase text-2xl tracking-widest"
+            class="mt-4 font-body text-center uppercase text-2xl tracking-widest"
           >
             PrOuts Neck
           </p>
           <p
-            class=" text-white font-body text-center uppercase text-2xl tracking-widest"
+            class="font-body text-center uppercase text-2xl tracking-widest"
           >
             COuntry Club
           </p>
           <p
-            class="mt-4 text-white font-body text-center uppercase text-3xl tracking-widest"
+            class="mt-4 font-body text-center uppercase text-3xl tracking-widest"
           >
             8 PM
           </p>
         </div>
         <div
-          class="border border-aqua rounded-full flex flex-col items-center justify-center w-[450px] h-[450px]"
+          class="bg-white/50 border border-aqua rounded-full flex flex-col items-center justify-center w-[450px] h-[450px]"
         >
           <p
-            class="text-white font-body text-center uppercase text-5xl xl:text-6xl tracking-widest"
+            class="font-body text-center uppercase text-5xl xl:text-6xl tracking-widest"
           >
             10.7
           </p>
           <p
-            class="mt-8 text-white font-body text-center uppercase text-3xl tracking-widest"
+            class="mt-8 font-body text-center uppercase text-3xl tracking-widest"
           >
             CeremOny & ReceptiOn
           </p>
           <p
-            class="mt-4 text-white font-body text-center uppercase text-2xl tracking-widest"
+            class="mt-4 font-body text-center uppercase text-2xl tracking-widest"
           >
             4 Library Lane
           </p>
           <p
-            class=" text-white font-body text-center uppercase text-2xl tracking-widest"
+            class="font-body text-center uppercase text-2xl tracking-widest"
           >
             PrOuts Neck, ME
           </p>
           <p
-            class="mt-4 text-white font-body text-center uppercase text-3xl tracking-widest"
+            class="mt-4 font-body text-center uppercase text-3xl tracking-widest"
           >
             5 PM
           </p>
         </div>
 
         <div
-          class="border border-aqua rounded-full flex flex-col items-center justify-center w-[450px] h-[450px]"
+          class="bg-white/50 border border-aqua rounded-full flex flex-col items-center justify-center w-[450px] h-[450px]"
         >
           <p
-            class="text-white font-body text-center uppercase text-5xl xl:text-6xl tracking-widest"
+            class="font-body text-center uppercase text-5xl xl:text-6xl tracking-widest"
           >
             10.8
           </p>
           <p
-            class="mt-8 text-white font-body text-center uppercase text-3xl tracking-widest"
+            class="mt-8 font-body text-center uppercase text-3xl tracking-widest"
           >
             OxbOw Brewing
           </p>
           <p
-            class="mt-4 text-white font-body text-center uppercase text-3xl tracking-widest"
+            class="mt-4 font-body text-center uppercase text-3xl tracking-widest"
           >
             Beers & LIGHT Lunch
           </p>
           <p
-            class="mt-4 text-white font-body text-center uppercase text-2xl tracking-widest"
+            class="mt-4 font-body text-center uppercase text-2xl tracking-widest"
           >
-             49 Washington Ave. <br/>POrtland ME 04101
+            49 Washington Ave. <br />POrtland ME 04101
           </p>
           <p
-            class="mt-4 text-white font-body text-center uppercase text-3xl tracking-widest"
+            class="mt-4 font-body text-center uppercase text-3xl tracking-widest"
           >
             12 PM
           </p>
@@ -257,7 +258,7 @@
           class="hover:shadow-2xl w-full flex items-center justify-center h-64 bg-white rounded-lg"
         >
           <img
-            class="aspect-square w-auto h-full object-contain "
+            class="aspect-square w-auto h-full object-contain"
             src="./images/Best-Western-logo.png"
             alt=""
           />
@@ -268,7 +269,7 @@
           class="hover:shadow-2xl w-full flex items-center justify-center h-64 bg-white rounded-lg"
         >
           <img
-            class="aspect-square w-auto h-full object-contain "
+            class="aspect-square w-auto h-full object-contain"
             src="./images/higgins-beach-inn-logo.png"
             alt=""
           />
@@ -279,7 +280,7 @@
           class="hover:shadow-2xl w-full flex items-center justify-center h-64 bg-white rounded-lg"
         >
           <img
-            class="aspect-square w-auto h-full object-contain "
+            class="aspect-square w-auto h-full object-contain"
             src="./images/black-point-inn-logo.jpeg"
             alt=""
           />
@@ -291,7 +292,7 @@
           class="hover:shadow-2xl w-full flex items-center justify-center h-64 bg-white rounded-lg"
         >
           <img
-            class="aspect-square w-auto h-full object-contain "
+            class="aspect-square w-auto h-full object-contain"
             src="./images/InnbytheSealogo.jpeg"
             alt=""
           />
